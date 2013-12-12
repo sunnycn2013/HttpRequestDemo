@@ -7,15 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "CCDataServer.h"
+#import "DownViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+//    UIButton* btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+//    btn.frame = CGRectMake(100, 300, 50, 50);
+//    [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    //[self.window addSubview:btn];
+    self.window.rootViewController = [[DownViewController alloc] initWithNibName:@"DownViewController" bundle:nil];
+    
     return YES;
 }
 
@@ -45,5 +53,10 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (void)btnClicked:(id)sender{
+    
+}
+
 
 @end

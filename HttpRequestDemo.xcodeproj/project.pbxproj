@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4111D0C31859B72600E46015 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4111D0C21859B72600E46015 /* MediaPlayer.framework */; };
 		4130843F184F2F17002D1299 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4130843E184F2F17002D1299 /* Foundation.framework */; };
 		41308441184F2F17002D1299 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41308440184F2F17002D1299 /* CoreGraphics.framework */; };
 		41308443184F2F17002D1299 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41308442184F2F17002D1299 /* UIKit.framework */; };
@@ -19,6 +20,10 @@
 		4130845A184F2F17002D1299 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41308442184F2F17002D1299 /* UIKit.framework */; };
 		41308462184F2F17002D1299 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41308460184F2F17002D1299 /* InfoPlist.strings */; };
 		41308464184F2F17002D1299 /* HttpRequestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41308463184F2F17002D1299 /* HttpRequestDemoTests.m */; };
+		4130846F184F2F5D002D1299 /* CCHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4130846E184F2F5D002D1299 /* CCHttpRequest.m */; };
+		41308472184F32BB002D1299 /* CCDataServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 41308471184F32BB002D1299 /* CCDataServer.m */; };
+		4187FFBF185994CD007CFDF0 /* DownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4187FFBD185994CD007CFDF0 /* DownViewController.m */; };
+		4187FFC0185994CD007CFDF0 /* DownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4187FFBE185994CD007CFDF0 /* DownViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4111D0C21859B72600E46015 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4130843B184F2F17002D1299 /* HttpRequestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HttpRequestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4130843E184F2F17002D1299 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41308440184F2F17002D1299 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +54,13 @@
 		4130845F184F2F17002D1299 /* HttpRequestDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HttpRequestDemoTests-Info.plist"; sourceTree = "<group>"; };
 		41308461184F2F17002D1299 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41308463184F2F17002D1299 /* HttpRequestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpRequestDemoTests.m; sourceTree = "<group>"; };
+		4130846D184F2F5D002D1299 /* CCHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHttpRequest.h; sourceTree = "<group>"; };
+		4130846E184F2F5D002D1299 /* CCHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHttpRequest.m; sourceTree = "<group>"; };
+		41308470184F32BB002D1299 /* CCDataServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDataServer.h; sourceTree = "<group>"; };
+		41308471184F32BB002D1299 /* CCDataServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDataServer.m; sourceTree = "<group>"; };
+		4187FFBC185994CD007CFDF0 /* DownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownViewController.h; sourceTree = "<group>"; };
+		4187FFBD185994CD007CFDF0 /* DownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownViewController.m; sourceTree = "<group>"; };
+		4187FFBE185994CD007CFDF0 /* DownViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4111D0C31859B72600E46015 /* MediaPlayer.framework in Frameworks */,
 				41308441184F2F17002D1299 /* CoreGraphics.framework in Frameworks */,
 				41308443184F2F17002D1299 /* UIKit.framework in Frameworks */,
 				4130843F184F2F17002D1299 /* Foundation.framework in Frameworks */,
@@ -96,6 +110,7 @@
 		4130843D184F2F17002D1299 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4111D0C21859B72600E46015 /* MediaPlayer.framework */,
 				4130843E184F2F17002D1299 /* Foundation.framework */,
 				41308440184F2F17002D1299 /* CoreGraphics.framework */,
 				41308442184F2F17002D1299 /* UIKit.framework */,
@@ -111,6 +126,13 @@
 				4130844E184F2F17002D1299 /* AppDelegate.m */,
 				41308450184F2F17002D1299 /* Images.xcassets */,
 				41308445184F2F17002D1299 /* Supporting Files */,
+				4130846D184F2F5D002D1299 /* CCHttpRequest.h */,
+				4130846E184F2F5D002D1299 /* CCHttpRequest.m */,
+				41308470184F32BB002D1299 /* CCDataServer.h */,
+				41308471184F32BB002D1299 /* CCDataServer.m */,
+				4187FFBC185994CD007CFDF0 /* DownViewController.h */,
+				4187FFBD185994CD007CFDF0 /* DownViewController.m */,
+				4187FFBE185994CD007CFDF0 /* DownViewController.xib */,
 			);
 			path = HttpRequestDemo;
 			sourceTree = "<group>";
@@ -219,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4187FFC0185994CD007CFDF0 /* DownViewController.xib in Resources */,
 				41308449184F2F17002D1299 /* InfoPlist.strings in Resources */,
 				41308451184F2F17002D1299 /* Images.xcassets in Resources */,
 			);
@@ -239,7 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4187FFBF185994CD007CFDF0 /* DownViewController.m in Sources */,
+				41308472184F32BB002D1299 /* CCDataServer.m in Sources */,
 				4130844F184F2F17002D1299 /* AppDelegate.m in Sources */,
+				4130846F184F2F5D002D1299 /* CCHttpRequest.m in Sources */,
 				4130844B184F2F17002D1299 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +467,7 @@
 				41308469184F2F17002D1299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4130846A184F2F17002D1299 /* Build configuration list for PBXNativeTarget "HttpRequestDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +476,7 @@
 				4130846C184F2F17002D1299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
